@@ -1,0 +1,4 @@
+.gitmodules             eol=lf
+Makefile                eol=lf
+GNUmakefile             eol=lf
+doc/rfc*.txt            eof=lf

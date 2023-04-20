@@ -1,0 +1,6 @@
+Index:
+  Background: Skip
+CompileFlags:
+  Add: [-I../zlib]
+Diagnostics:
+  UnusedIncludes: Strict

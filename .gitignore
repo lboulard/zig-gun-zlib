@@ -1,0 +1,11 @@
+*~
+*.bak
+*.orig
+*.sw[a-z]
+\#*\#
+
+/zig-cache/
+/zig-out/
+/deps.zig
+*.exe
+

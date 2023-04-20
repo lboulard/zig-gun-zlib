@@ -1,0 +1,7 @@
+---
+Index:
+  Background: Skip
+If:
+  PathMatch: zlib/.*
+CompileFlags:
+  Add: [-I. -I..]
