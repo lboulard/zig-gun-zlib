@@ -16,7 +16,11 @@ all: win32-all linux-all
 
 .PHONY: win32-msvc
 win32-msvc:
+ifeq ($(OS),Windows_NT)
 	"$(ZIG)" build -Doptimize=ReleaseFast -Dtarget=x86_64-windows-msvc -Dcpu=x86_64_v3 $(ZIG_FLAGS) -p "$(OUTDIR)/win32-x86_64-msvc"
+else
+	@echo $@ not buildable on cross compilation
+endif
 
 .PHONY: win32-mingw
 win32-mingw:
